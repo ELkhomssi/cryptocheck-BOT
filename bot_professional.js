@@ -21,7 +21,7 @@ const BOT_USERNAME     = '@CryptoCheckGold_bot'
 if (!BOT_TOKEN) throw new Error('TELEGRAM_BOT_TOKEN missing')
 
 // ── Bot instance ─────────────────────────────────────────────────
-const bot = new TelegramBot(BOT_TOKEN, { polling: false })
+const bot = new TelegramBot(BOT_TOKEN, { polling: true })
 
 // ── Session store ────────────────────────────────────────────────
 const sessions   = new Map()
